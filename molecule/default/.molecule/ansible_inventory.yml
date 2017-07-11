@@ -1,0 +1,11 @@
+# Molecule managed
+
+---
+all:
+  hosts:
+    test-role-docker-default: &id001
+      ansible_connection: docker
+ungrouped:
+  hosts:
+    test-role-docker-default: *id001
+  vars: {}

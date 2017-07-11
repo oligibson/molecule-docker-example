@@ -1,0 +1,4 @@
+---
+# tasks file for test-role-docker
+- name: install wget package
+  apt: name=wget state=present
